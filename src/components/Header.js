@@ -29,7 +29,7 @@ function Header() {
       </div>
       <ul className='flex items-center justify-center'>
         {
-          items.map((item, index) => <Link to={item.link} smooth={true} offset={-100} className='cursor-pointer hover:underline underline-offset-8 hover:text-[#22d3ee] mx-2 font-semibold text-lg' key={item.index}>{item.name}</Link>)
+          items.map((item, index) => <Link key={index} to={item.link} smooth={true} offset={-100} className='cursor-pointer hover:underline underline-offset-8 hover:text-[#22d3ee] mx-2 font-semibold text-lg'>{item.name}</Link>)
         }
       </ul> 
     </div>

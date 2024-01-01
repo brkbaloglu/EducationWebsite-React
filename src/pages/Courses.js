@@ -25,8 +25,8 @@ function Courses() {
       <h2 className='text-center text-4xl font-bold my-10'>Our <span className='text-[#48def6]'>Courses</span></h2>
       <div className='grid grid-cols-3'>
         {
-          courses.map((course) => (
-            <div className=' mx-10'>
+          courses.map((course, index) => (
+            <div key={index} className=' mx-10'>
               <div className='flex items-center justify-center flex-col my-5'>
                 <img className='w-[500px] h-[300px] my-10' src={course.courseImage} alt="" />
                 <h2 className='font-bold'>Course name : <span className='font-normal'>{course.courseName}</span></h2>
